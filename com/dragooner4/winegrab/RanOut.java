@@ -13,12 +13,7 @@ public class RanOut extends Task {
 	}
 
 	public boolean valid() {
-<<<<<<< HEAD
-		return ctx.methods.itemCount(MyMethods.LAW_RUNE) == 0
-				|| ctx.methods.itemCount(MyMethods.WATER_RUNE) == 0;
-=======
 		return ctx.methods.itemCount(MyMethods.LAW_RUNE) == 0 || ctx.methods.itemCount(MyMethods.WATER_RUNE) == 0;
->>>>>>> 55f4a60a642f700d888a49fa654ac772e93a4258
 	}
 
 }
