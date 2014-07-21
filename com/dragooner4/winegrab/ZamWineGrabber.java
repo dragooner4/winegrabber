@@ -39,28 +39,14 @@ public class ZamWineGrabber extends GraphScript<MyContext> implements
 		g.setFont(font);
 
 		g.drawString("Time elapsed: " + ctx.methods.clock(), margin, vertMargin);
-		g.drawString(
-				"Law runes left: " + ctx.methods.itemCount(MyMethods.LAW_RUNE),
-				margin, vertMargin + spacing);
-		g.drawString(
-				"Water runes left: "
-						+ ctx.methods.itemCount(MyMethods.WATER_RUNE), margin,
-				vertMargin + 2 * spacing);
-		g.drawString("Wines collected: " + ctx.methods.getWineCollected(),
-				margin, vertMargin + 3 * spacing);
-		g.drawString("Total experience gained: + " + ctx.methods.getMagicExp(),
-				margin, vertMargin + 4 * spacing);
-		g.drawString(
-				"Experience per hour: "
-						+ (int) (ctx.methods.getMagicExp() / (elapsedTime / 3600000.0)),
-				margin, vertMargin + 5 * spacing);
-		g.drawString("Total gold gained: " + ctx.methods.gold(true), margin,
-				vertMargin + 6 * spacing);
-		g.drawString("Gold per hour: "
-				+ (int) (ctx.methods.gold(true) / (elapsedTime / 3600000.0)),
-				margin, vertMargin + 7 * spacing);
-		g.drawString("Status: " + ctx.methods.status(), margin, vertMargin + 8
-				* spacing);
+		g.drawString("Law runes left: " + ctx.methods.itemCount(MyMethods.LAW_RUNE),	margin, vertMargin + spacing);
+		g.drawString("Water runes left: "	+ ctx.methods.itemCount(MyMethods.WATER_RUNE), margin,verticalMargin + 2 * spacing);
+		g.drawString("Wines collected: " + ctx.methods.getWineCollected(),margin, vertMargin + 3 * spacing);
+		g.drawString("Total experience gained: + " + ctx.methods.getMagicExp(),	margin, vertMargin + 4 * spacing);
+		g.drawString(	"Experience per hour: "	+ (int) (ctx.methods.getMagicExp() / (elapsedTime / 3600000.0)),	margin, vertMargin + 5 * spacing);
+		g.drawString("Total gold gained: " + ctx.methods.gold(true), margin,vertMargin + 6 * spacing);
+		g.drawString("Gold per hour: "	+ (int) (ctx.methods.gold(true) / (elapsedTime / 3600000.0)),	margin, vertMargin + 7 * spacing);
+		g.drawString("Status: " + ctx.methods.status(), margin, vertMargin + 8	* spacing);
 		g.drawLine(x, 0, x, 500);
 		g.drawLine(0, y, 765, y);
 
