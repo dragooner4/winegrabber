@@ -45,12 +45,7 @@ public class LostAndFound extends Task {
 	public void run() {
 		ctx.methods.setStatus("In Lost and Found random event");
 		Condition.sleep(2500);
-<<<<<<< HEAD
-		ctx.methods
-				.setStatus("Applying multi line algorithm to determine odd appendage...");
-=======
 		ctx.methods.setStatus("Applying multi line algorithm to determine odd appendage...");
->>>>>>> 55f4a60a642f700d888a49fa654ac772e93a4258
 		Condition.sleep(1000);
 		ctx.methods.setStatus("Odd Appendage found! GREAT SUCESS");
 		final GameObject appendage = oddOneOut();
