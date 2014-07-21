@@ -71,6 +71,7 @@ public class MyMethods extends ClientAccessor {
 	}
 
 	public boolean inArea(Tile[] area, Tile loc) {
+		Arrays.sort(area);
 		return Arrays.binarySearch(area, loc) >= 0;
 	}
 
