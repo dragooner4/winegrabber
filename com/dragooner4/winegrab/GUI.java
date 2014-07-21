@@ -22,18 +22,10 @@ public class GUI extends MyContext {
 	private JFrame frame;
 	private JPanel contentPane;
 	private JTextField textField;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public static boolean initiate = false;
+	public static boolean alchSelected = true
+        public static boolean initiate = false;
 	public static boolean alchSelected = true;
-=======
-    public static boolean initiate = false;
-    public static boolean alchSelected = true;
->>>>>>> origin/master
-=======
-	public static boolean initiate = false;
-	public static boolean alchSelected = true;
->>>>>>> 55f4a60a642f700d888a49fa654ac772e93a4258
 	public static String alchItemID = "";
 
 	/**
